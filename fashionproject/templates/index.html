@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+      {% for i in fashion_list %}
+        <div class="col-md-2" style="padding:30px;">
+            <div class="card" style="width:10rem;">
+               <img src="{{i.img.url}}" class="card-img-top" alt="..." height="150">
+                <div class="card-body" style="height:10rem;">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-title">{{i.price}}</p>
+                    <a href="{% url 'fashionapp:detail' i.id %}"><b style="color:tomato;">VIEW DETAILS</b></a>
+                </div>
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}

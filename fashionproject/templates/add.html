@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div style="padding:50px;line-height:200%;">
+    <h3 style="color:green;">New Dress Details</h3>
+    <input type="text" name="name" placeholder="Enter dress name"><br>
+    <input type="text" name="price" placeholder="Enter price"><br>
+    <input type="text" name="category" placeholder="Enter dress category"><br>
+    <input type="text" name="desc" placeholder="Enter dress description"><br>
+    <input type="file" name="img"><br>
+    <input type="submit" style="color:red">
+  </div>
+</form>
+{% endblock %}
