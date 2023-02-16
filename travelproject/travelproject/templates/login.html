@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        .demo{background-image:url({% static 'new.jpg' %});
+        background-size:cover;}
+    </style>
+</head>
+<body class="demo">
+<form action="login" method="post">
+      {% csrf_token %}
+    <div style="text-align:center;line-height:300%;padding:100px;">
+        <h1 style="padding:10px">LOGIN</h1>
+        <input type="text" name="username" placeholder="Enter your username" style="padding:10px;"><br>
+        <input type="password" name="password" placeholder="Enter your password" style="padding:10px;"><br>
+        <input type="submit" style="padding:10px;color:red">
+    </div>
+</form>
+{% for msg in messages %}
+<h2 style="text-align:center;color:blue;">{{msg}}</h2>
+{% endfor %}
+</body>
+</html>
