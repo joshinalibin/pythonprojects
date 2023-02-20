@@ -13,10 +13,11 @@
     <style>
           body {
     font-family: 'DM Serif Display', serif;
+    height:500px;
                }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" >
 <div class="container">
   {% include 'header.html' %}
     {% include 'navbar.html' %}
@@ -24,7 +25,7 @@
   {% endblock %}
 </div>
   {% include 'footer.html' %}
-      <script src="{% static 'js/slim.min.js' %}"></script>
+     <script src="{% static 'js/slim.min.js' %}"></script>
       <script src="{% static 'js/popper.min.js' %}"></script>
       <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>

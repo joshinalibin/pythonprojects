@@ -11,10 +11,10 @@
 }
 /*** footer ***/
 .my_footer{
-     background-color:pink;
-     height:60px;
-     padding-top:20px;
-     font-size:20px;
+        background-color:pink;
+        height:40px;
+        padding-top:20px;
+        font-size:14px;
 }
 /*** category page ***/
 .my_row_class{
