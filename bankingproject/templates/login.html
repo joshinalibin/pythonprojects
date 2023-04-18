@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'custom.css' %}">
+    <style>
+        .demo{background-image:url({% static 'new2.jpg' %});
+        background-size:cover;}
+    </style>
+</head>
+<body class="demo">
+<h2 style="color:pink"><a href="{% url 'base' %}" style="color:yellow">Home</a> | Login Page</h2>
+<form action="login" method="post">
+      {% csrf_token %}
+    <div style="text-align:right;line-height:300%;padding:40px;">
+    <h1 style="padding:10px;color:red;">LOGIN</h1>
+
+         <label  class="standard-label" style="font-size: 20px;">Username<span class="required">*</span>
+          <input class="standard-input" style="font-size: 15px;" name="username" id="name" type="text" placeholder="Enter username..." >
+        </label><br>
+        <label  class="standard-label" style="font-size: 20px;">Password<span class="required">*</span>
+          <input class="standard-input" style="font-size: 15px;" name="password"  type="password" placeholder="Enter password..." >
+        </label><br>
+
+        <input type="submit" style="padding:10px;background-color:pink;color:blue">
+        <a href="{% url 'register' %}" style="color:red;font-size:18px;">Register</a>
+
+    </div>
+</form>
+{% for msg1 in messages %}
+<h2 style="text-align:right;color:red;">{{msg1}}</h2>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,31 @@
+.required {
+  font-size: 1.5em;
+  color: red;
+}
+.standard-label {
+
+  margin-bottom: 20px;
+}
+.standard-input, .standard-select {
+  margin-top: 10px;
+  border: 3px lightsteelgreen solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+.standard-input {
+  height: 20px;
+  width: 250px;
+  font-size: 10px;
+}
+
+.demo1{
+        padding:8px;
+}
+.container {
+  width: 40%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px black solid;
+  padding: 10px;
+  background-color: lightsteelblue;
+}

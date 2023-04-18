@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+    <ul class="navbar-nav mx-auto">
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" href="{% url 'base' %}">Home <span class="sr-only">(current)</span></a>-->
+<!--      </li>-->
+      <li class="nav-item text-center">
+        <a class="nav-link"  href="{% url 'login' %}"><b>Login</b></a>
+      </li>
+        <li class="nav-item text-center">
+        <a class="nav-link" href="{% url 'register' %}"><b>Register</b></a>
+      </li>
+      <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <b>Branches</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Trivandrum_district">Trivandrum</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kollam_district">Kollam</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Alappuzha_district">Alappuzha</a>
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kottayam_district">Kottayam</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Ernakulam_district">Ernakulam</a>
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Malappuram_district">Malappuram</a>
+       </div>
+      </li>
+    </ul>
+  </div>
+</nav>
